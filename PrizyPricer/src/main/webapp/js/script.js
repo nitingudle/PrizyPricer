@@ -108,7 +108,6 @@ $(document).ready(function() {
 			        url: window.location.pathname.substring(0, window.location.pathname.indexOf("/",2))+"/API/v1/products/"+code,
 			        dataType: "json",
 			        success: function (returnedData) {
-			        	$('#idealPrice').modal('show');
 				    	$("#idealPrice").on("shown.bs.modal", function () {  
 				    		var tbody = $('#idealPriceTable tbody');
 				    		tbody.empty();
